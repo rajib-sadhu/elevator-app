@@ -21,7 +21,7 @@ function App() {
 
     const bell = () => {
       new Audio(sound).play();
-      console.log('bell')
+      console.log('bell');
     }
 
 
@@ -58,7 +58,7 @@ function App() {
         setDis2(true);
         setTimeout(() => {
           setDis1(false)
-          bell()
+          bell();
         }, 5000);
 
       },5000)
@@ -100,9 +100,7 @@ function App() {
 
   const btn3 =()=>{
 
-    setTimeout(() => {
-      bell();
-    }, 3000);
+
     
     console.log('btn3-'+status);
 
@@ -114,7 +112,8 @@ function App() {
       setDis1(true)
 
       setTimeout(() => {
-        setDis4(false)
+        setDis4(false);
+        bell()
       }, 5000);
 
       setAction(!action)
@@ -130,6 +129,10 @@ function App() {
       setDis2(false)
       setDis1(true)
 
+      setTimeout(() => {
+        bell();
+      }, 3000);
+
    
     }
     else if(status=='dwn'){
@@ -143,6 +146,7 @@ function App() {
 
       setTimeout(() => {
         setDis4(false)
+        bell()
       }, 5000);
 
     
@@ -156,12 +160,9 @@ function App() {
     // button 2 - Mid - down
 
   const btn2 =()=>{
-
-    setTimeout(() => {
-      bell();
-    }, 3500);
     
 
+    
     
     console.log('btn2-'+status)
 
@@ -175,6 +176,7 @@ function App() {
 
       setTimeout(() => {
         setDis1(false)
+        bell()
       }, 5000);
 
       
@@ -188,6 +190,10 @@ function App() {
       setDis2(false)
       setDis1(true)
 
+      setTimeout(() => {
+        bell();
+      }, 3000);
+
     }
     else if(status=='up'){
       setElevate(0)
@@ -200,6 +206,7 @@ function App() {
 
       setTimeout(() => {
         setDis1(false)
+        bell()
       }, 5000);
 
    
