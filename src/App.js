@@ -100,8 +100,6 @@ function App() {
 
   const btn3 =()=>{
 
-
-    
     console.log('btn3-'+status);
 
     if(status=='up'){
@@ -137,7 +135,7 @@ function App() {
     }
     else if(status=='dwn'){
       setElevate(400);
-      setAction(!action)
+      setAction(!action);
       
       setDis4(true)
       setDis3(true)
